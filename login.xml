@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="HARVEST HERO"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/descriptionTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Analisis Penyakit pada Tumbuhan"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Ketahui kondisi tanaman Anda\nmelalui fitur analisis kami."
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/googleSignInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/googleSignInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Silahkan masuk dengan akun google"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/googleSignInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Masuk dengan Google"
+            android:drawableStart="@drawable/logogoogle" />
+
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Dont have an account? sign up!"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+</RelativeLayout>
